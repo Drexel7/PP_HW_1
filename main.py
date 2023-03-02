@@ -9,7 +9,7 @@ if __name__ == "__main__":
     x = x.replace(':', '')
     x = x.replace(';', '')
     x = x.replace('\'', '')
-    x = x.replace('\"', '')
+    x = x.replace('\'', '')
 
     sir= ""
     for a in x:
@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     sir_final =""
     for i in range(len(sir)-1):
-        if sir[i] != ' ' or sir[i + 1] != ' ':  #daca avem 3 spatii consecutive apoi un alt caracter, primele doua spatii se vor sterge
+        if sir[i] != ' ' or sir[i + 1] != ' ':
             sir_final += sir[i]
 
     print(sir_final)
